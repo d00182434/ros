@@ -1,0 +1,29 @@
+[fast-rtps-topic-performance]
+All the code came from eProsima/Fast-RTPS, with few modification for my own testing, before the testing, you should install the eProsima's Fast-RTPS.
+1. install the eProsima's Fast-RTPS follow the link below.
+   ==>https://github.com/eProsima/Fast-RTPS
+2. using cmake for compilation follow instructions below, then you will found the executable binaries.
+   mkdir build
+   cd build
+   cmake ..
+   make
+
+[intra-process-performance]
+This is the performance testing program for ros2.x intra-process, you must install ros2.x for compiling this program, after that, please follow these instructions below to compile.
+1. setup the ros2.x environment, use your own ros2_ws path instead the ones in the instruction.
+   souce ~/ros2_ws/install/local_setup.bash
+2. run ament for build, the result will be found under ./install/bin/intra-process-performance/IntraProcessTest
+   ament build --cmake-args -DCMAKE_BUILD_TYPE=Debug
+ 
+[ros-performance-catkin-ws]
+This is the performance testing catkin workspace for ros1.x, including latency node, throughput node. It requried ros kinetic was install on your localhost.
+1. install ros1.x follow the next link.
+   ==>http://wiki.ros.org/kinetic/Installation/Source
+2. cd into catkin workspace folder and compile it.
+   cd ros-performance-catkin-ws
+   catkin_make
+3. run testing, here is an example for 2 subscriber testing.
+   rosrun latency_test talker -n 2 -s <number> -l <size> [-u | --unreliable]
+   rosrun latency_test listener [-u|--unreliable]  __name:=node0
+   rosrun latency_test listener [-u|--unreliable]  __name:=node1
+   
