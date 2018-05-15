@@ -2,6 +2,12 @@
 All the code came from eProsima/Fast-RTPS, with few modification for my own testing, before the testing, you should install the eProsima's Fast-RTPS.
 1. install the eProsima's Fast-RTPS follow the link below.
    ==>https://github.com/eProsima/Fast-RTPS
+   mkdir build
+   cd build
+   cmake -DTHIRDPARTY=ON ..
+   make
+   sudo make install
+
 2. using cmake for compilation follow instructions below, then you will found the executable binaries.
    mkdir build
    cd build
