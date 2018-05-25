@@ -24,6 +24,10 @@
 #include <condition_variable>
 #include "LatencyTestTypes.h"
 
+using namespace eprosima;
+using namespace eprosima::fastrtps;
+using namespace eprosima::fastrtps::rtps;
+
 class LatencyTestSubscriber {
     public:
         LatencyTestSubscriber();

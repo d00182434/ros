@@ -22,6 +22,11 @@
 
 #include "fastrtps/fastrtps_all.h"
 
+using namespace eprosima;
+using namespace eprosima::fastrtps;
+using namespace eprosima::fastrtps::rtps;
+
+
 //zhouyoujun:
 #define NO_CONTINUOUS_MODE
 

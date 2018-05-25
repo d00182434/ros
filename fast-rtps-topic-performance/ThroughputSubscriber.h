@@ -30,7 +30,9 @@
 #include <fastrtps/subscriber/SampleInfo.h>
 
 
+using namespace eprosima;
 using namespace eprosima::fastrtps;
+using namespace eprosima::fastrtps::rtps;
 
 #include <condition_variable>
 #include <chrono>

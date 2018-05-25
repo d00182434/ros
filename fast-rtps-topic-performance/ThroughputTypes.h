@@ -28,6 +28,7 @@
 
 using namespace eprosima;
 using namespace eprosima::fastrtps;
+using namespace eprosima::fastrtps::rtps;
 
 //typedef struct TroughputTimeStats{
 //	uint32_t nsamples;

@@ -27,6 +27,9 @@
 #include <condition_variable>
 #include <chrono>
 
+using namespace eprosima;
+using namespace eprosima::fastrtps;
+using namespace eprosima::fastrtps::rtps;
 
 class TimeStats{
 public:
